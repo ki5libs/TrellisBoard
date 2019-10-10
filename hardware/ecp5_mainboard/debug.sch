@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ecp5_mainboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -685,17 +685,6 @@ Wire Wire Line
 	6900 6300 7600 6300
 Connection ~ 7600 6300
 $Comp
-L eco_memory:93AA46B_OT U12
-U 1 1 628C86C1
-P 5150 5400
-F 0 "U12" H 5150 5815 50  0000 C CNN
-F 1 "93AA46B_OT" H 5150 5724 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5150 5400 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf" H 5150 5400 50  0001 C CNN
-	1    5150 5400
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR069
 U 1 1 628D3E7E
 P 4050 5000
@@ -718,13 +707,7 @@ F 3 "" H 4050 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 5750 4050 5550
-Wire Wire Line
-	4050 5550 4450 5550
-Wire Wire Line
 	4050 5000 4050 5100
-Wire Wire Line
-	4050 5250 4450 5250
 $Comp
 L Device:C_Small C87
 U 1 1 628F180E
@@ -737,20 +720,6 @@ F 3 "~" H 4050 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 5300 4050 5250
-Connection ~ 4050 5250
-Wire Wire Line
-	4050 5550 4050 5500
-Connection ~ 4050 5550
-Wire Wire Line
-	5850 5250 5900 5250
-Wire Wire Line
-	5900 5250 5900 4650
-Wire Wire Line
-	5900 4650 7000 4650
-Wire Wire Line
-	5850 5350 6000 5350
-Wire Wire Line
 	6000 5350 6000 4750
 Wire Wire Line
 	6000 4750 7000 4750
@@ -758,8 +727,6 @@ Wire Wire Line
 	7000 4850 6400 4850
 Wire Wire Line
 	6400 4850 6400 5450
-Wire Wire Line
-	6400 5450 5850 5450
 $Comp
 L Device:R_Small R38
 U 1 1 62926020
@@ -797,8 +764,6 @@ Wire Wire Line
 	4450 5100 4050 5100
 Connection ~ 4050 5100
 Wire Wire Line
-	4050 5100 4050 5250
-Wire Wire Line
 	5000 4750 4450 4750
 Wire Wire Line
 	4450 4750 4450 4850
@@ -819,11 +784,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 4550 6100 4550
 Connection ~ 6100 5550
-Wire Wire Line
-	6100 5550 5850 5550
-Wire Wire Line
-	5400 4650 5900 4650
-Connection ~ 5900 4650
 Wire Wire Line
 	6000 4750 5400 4750
 Connection ~ 6000 4750
@@ -1181,4 +1141,48 @@ NoConn ~ 3200 4350
 NoConn ~ 3200 4250
 NoConn ~ 3200 3450
 NoConn ~ 3200 3550
+$Comp
+L Memory_EEPROM:93AAxxBT-xOT U12
+U 1 1 5DF25CEE
+P 5250 5450
+F 0 "U12" H 5000 5700 50  0000 C CNN
+F 1 "93AAxxBT-xOT" H 5550 5700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5300 5800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf" H 5250 5450 50  0001 C CNN
+	1    5250 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5500 4050 5750
+Wire Wire Line
+	4050 5750 5250 5750
+Connection ~ 4050 5750
+Wire Wire Line
+	4450 5100 5250 5100
+Wire Wire Line
+	5250 5100 5250 5150
+Connection ~ 4450 5100
+Wire Wire Line
+	4050 5100 4050 5300
+Wire Wire Line
+	5650 5550 6100 5550
+Wire Wire Line
+	5650 5450 6400 5450
+Wire Wire Line
+	5650 5350 6000 5350
+Wire Wire Line
+	5400 4650 5900 4650
+Wire Wire Line
+	5900 4650 5900 5100
+Wire Wire Line
+	5900 5100 5750 5100
+Connection ~ 5900 4650
+Wire Wire Line
+	5900 4650 7000 4650
+Text Label 5750 5100 0    50   ~ 0
+CS
+Wire Wire Line
+	4850 5350 4700 5350
+Text Label 4700 5350 0    50   ~ 0
+CS
 $EndSCHEMATC
