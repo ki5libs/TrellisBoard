@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ecp5_mainboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -158,30 +158,7 @@ Wire Wire Line
 Connection ~ 3850 2400
 Wire Wire Line
 	4550 2650 4550 2750
-$Comp
-L eco_power:TPS565208 U4
-U 1 1 5B5E5433
-P 6150 2750
-F 0 "U4" H 6150 3215 50  0000 C CNN
-F 1 "TPS565208" H 6150 3124 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6150 2750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps565208.pdf" H 6150 2750 50  0001 C CNN
-	1    6150 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 2750 5350 2750
-Wire Wire Line
-	5350 2750 5350 2550
 Connection ~ 4550 2400
-Wire Wire Line
-	5450 2550 5350 2550
-Wire Wire Line
-	5450 2950 5350 2950
-Wire Wire Line
-	5350 2950 5350 3350
-Wire Wire Line
-	5350 3350 5050 3350
 Connection ~ 4550 3350
 $Comp
 L Device:C_Small C6
@@ -203,10 +180,6 @@ Wire Wire Line
 Connection ~ 5050 3350
 Wire Wire Line
 	5050 3350 4550 3350
-Wire Wire Line
-	7150 2200 7150 2550
-Wire Wire Line
-	7150 2550 6850 2550
 $Comp
 L Device:C_Small C8
 U 1 1 5B5E9AC0
@@ -219,12 +192,7 @@ F 3 "~" H 7000 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7150 2550 7150 2750
-Wire Wire Line
 	7150 2750 7100 2750
-Connection ~ 7150 2550
-Wire Wire Line
-	6900 2750 6850 2750
 $Comp
 L Device:R_Small R12
 U 1 1 5B5EBCCF
@@ -239,9 +207,7 @@ $EndComp
 Wire Wire Line
 	8300 2350 8300 2200
 Wire Wire Line
-	8300 2550 8300 2950
-Wire Wire Line
-	8300 2950 6850 2950
+	8300 2550 8300 2850
 $Comp
 L Device:R_Small R13
 U 1 1 5B5ED622
@@ -253,11 +219,6 @@ F 3 "~" H 8300 3150 50  0001 C CNN
 	1    8300 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8300 3050 8300 2950
-Connection ~ 8300 2950
-Wire Wire Line
-	5350 3350 8300 3350
 Wire Wire Line
 	8300 3350 8300 3250
 $Comp
@@ -383,11 +344,6 @@ F 3 "~" H 12150 1750 50  0001 C CNN
 	1    12150 1750
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5350 2550 5350 2400
-Wire Wire Line
-	5350 2400 5050 2400
-Connection ~ 5350 2550
 Connection ~ 5050 2400
 Wire Wire Line
 	11850 1750 12000 1750
@@ -2437,7 +2393,6 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX811-MAX812.pdf" H 600 5700 
 	1    0    0    -1  
 $EndComp
 Connection ~ 8300 3350
-Connection ~ 5350 3350
 Text Label 2150 6400 0    50   ~ 0
 PWR_EN
 $Comp
@@ -2745,6 +2700,8 @@ $Comp
 L Device:D_Schottky_AAK D3
 U 1 1 5C219D75
 P 3200 2750
+AR Path="/5C219D75" Ref="D3"  Part="1" 
+AR Path="/5B5D9B41/5C219D75" Ref="D3"  Part="1" 
 F 0 "D3" V 3179 2890 50  0000 L CNN
 F 1 "MBR15U60" V 3270 2890 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-277B" H 3200 2750 50  0001 C CNN
@@ -2993,4 +2950,49 @@ Wire Wire Line
 Wire Wire Line
 	9000 2550 9000 2400
 Connection ~ 9000 2400
+$Comp
+L Regulator_Switching:TPS565208 U4
+U 1 1 5DB6D21A
+P 6150 2750
+F 0 "U4" H 6150 3117 50  0000 C CNN
+F 1 "TPS565208" H 6150 3026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6200 2500 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps565208.pdf" H 6150 2750 50  0001 C CNN
+	1    6150 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3350 6150 3350
+Wire Wire Line
+	5600 2400 5600 2650
+Wire Wire Line
+	5600 2650 5750 2650
+Wire Wire Line
+	5050 2400 5600 2400
+Wire Wire Line
+	5600 2650 5600 2850
+Wire Wire Line
+	5600 2850 5750 2850
+Connection ~ 5600 2650
+Wire Wire Line
+	6150 3050 6150 3350
+Connection ~ 6150 3350
+Wire Wire Line
+	6150 3350 8300 3350
+Wire Wire Line
+	6550 2850 8300 2850
+Connection ~ 8300 2850
+Wire Wire Line
+	8300 2850 8300 3050
+Wire Wire Line
+	7150 2200 7150 2750
+Wire Wire Line
+	6550 2750 6900 2750
+Wire Wire Line
+	6550 2650 6700 2650
+Wire Wire Line
+	6700 2650 6700 2200
+Wire Wire Line
+	6700 2200 7150 2200
+Connection ~ 7150 2200
 $EndSCHEMATC
