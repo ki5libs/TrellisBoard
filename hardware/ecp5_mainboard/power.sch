@@ -1976,17 +1976,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 7000 7950 7000
 $Comp
-L eco_power:TLV75712PDR U3
-U 1 1 5C1EB81E
-P 4100 9850
-F 0 "U3" H 4100 10315 50  0000 C CNN
-F 1 "TLV75712PDR" H 4100 10224 50  0000 C CNN
-F 2 "Custom Parts:TI_WSON8_2x2mm_p0.65mm" H 4100 9850 50  0001 C CNN
-F 3 "" H 4100 9850 50  0001 C CNN
-	1    4100 9850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+2V5 #PWR06
 U 1 1 5C1EC266
 P 2800 9450
@@ -1999,13 +1988,9 @@ F 3 "" H 2800 9450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2800 9450 2800 9650
-Wire Wire Line
-	2800 9850 3400 9850
-Wire Wire Line
-	3400 9650 2800 9650
 Connection ~ 2800 9650
 Wire Wire Line
-	2800 9650 2800 9850
+	2800 9650 2800 9750
 $Comp
 L Device:C_Small C1
 U 1 1 5C2414DF
@@ -2018,21 +2003,7 @@ F 3 "~" H 2800 10050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 9850 2800 9950
-Connection ~ 2800 9850
-Wire Wire Line
 	2800 10150 2800 10450
-Wire Wire Line
-	2800 10450 3300 10450
-Wire Wire Line
-	4100 10450 4100 10350
-Wire Wire Line
-	3400 10050 3300 10050
-Wire Wire Line
-	3300 10050 3300 10450
-Connection ~ 3300 10450
-Wire Wire Line
-	3300 10450 4100 10450
 $Comp
 L power:GND #PWR012
 U 1 1 5C2C44B3
@@ -2060,8 +2031,6 @@ F 3 "" H 5000 9450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 9450 5000 9650
-Wire Wire Line
-	5000 9650 4800 9650
 $Comp
 L Device:C_Small C5
 U 1 1 5C31E9CF
@@ -2167,17 +2136,6 @@ Wire Wire Line
 Text Notes 5050 9600 0    50   ~ 0
 1.2V/1A\nSERDES analog
 $Comp
-L eco_power:TLV75712PDR U6
-U 1 1 5C5AEF13
-P 8850 9900
-F 0 "U6" H 8850 10365 50  0000 C CNN
-F 1 "TLV75712PDR" H 8850 10274 50  0000 C CNN
-F 2 "Custom Parts:TI_WSON8_2x2mm_p0.65mm" H 8850 9900 50  0001 C CNN
-F 3 "" H 8850 9900 50  0001 C CNN
-	1    8850 9900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+2V5 #PWR020
 U 1 1 5C5AEF1A
 P 7550 9500
@@ -2190,13 +2148,9 @@ F 3 "" H 7550 9500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7550 9500 7550 9700
-Wire Wire Line
-	7550 9900 8150 9900
-Wire Wire Line
-	8150 9700 7550 9700
 Connection ~ 7550 9700
 Wire Wire Line
-	7550 9700 7550 9900
+	7550 9700 7550 9800
 $Comp
 L Device:C_Small C10
 U 1 1 5C5AEF25
@@ -2209,21 +2163,7 @@ F 3 "~" H 7550 10100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 9900 7550 10000
-Connection ~ 7550 9900
-Wire Wire Line
 	7550 10200 7550 10500
-Wire Wire Line
-	7550 10500 8050 10500
-Wire Wire Line
-	8850 10500 8850 10400
-Wire Wire Line
-	8150 10100 8050 10100
-Wire Wire Line
-	8050 10100 8050 10500
-Connection ~ 8050 10500
-Wire Wire Line
-	8050 10500 8850 10500
 $Comp
 L power:GND #PWR024
 U 1 1 5C5AEF35
@@ -2240,8 +2180,6 @@ Wire Wire Line
 Connection ~ 8850 10500
 Wire Wire Line
 	9750 9500 9750 9700
-Wire Wire Line
-	9750 9700 9550 9700
 $Comp
 L Device:C_Small C14
 U 1 1 5C5AEF45
@@ -2995,4 +2933,52 @@ Wire Wire Line
 Wire Wire Line
 	6700 2200 7150 2200
 Connection ~ 7150 2200
+$Comp
+L Regulator_Linear:TLV75712PDRV U3
+U 1 1 5DA22C23
+P 4100 9750
+F 0 "U3" H 3950 10000 50  0000 C CNN
+F 1 "TLV75712PDRV" H 4400 10000 50  0000 C CNN
+F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 4100 10075 50  0001 C CIN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv757p.pdf" H 4100 9800 50  0001 C CNN
+	1    4100 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:TLV75712PDRV U6
+U 1 1 5DA248CB
+P 8850 9800
+F 0 "U6" H 8700 10050 50  0000 C CNN
+F 1 "TLV75712PDRV" H 9150 10050 50  0000 C CNN
+F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 8850 10125 50  0001 C CIN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv757p.pdf" H 8850 9850 50  0001 C CNN
+	1    8850 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 10450 4100 10450
+Wire Wire Line
+	4100 10050 4100 10450
+Wire Wire Line
+	2800 9650 3800 9650
+Wire Wire Line
+	3800 9750 2800 9750
+Connection ~ 2800 9750
+Wire Wire Line
+	2800 9750 2800 9950
+Wire Wire Line
+	4400 9650 5000 9650
+Wire Wire Line
+	7550 10500 8850 10500
+Wire Wire Line
+	9150 9700 9750 9700
+Wire Wire Line
+	8850 10100 8850 10500
+Wire Wire Line
+	8550 9800 7550 9800
+Connection ~ 7550 9800
+Wire Wire Line
+	7550 9700 8550 9700
+Wire Wire Line
+	7550 9800 7550 10000
 $EndSCHEMATC
