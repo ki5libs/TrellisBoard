@@ -4,5 +4,6 @@
 *.zip
 *.bck
 *.kicad_pcb-bak
+*.sch-bak
 Thumbs.db
 fp-info-cache
