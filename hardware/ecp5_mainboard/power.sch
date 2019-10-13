@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ecp5_mainboard-rescue:Barrel_Jack-Connector J1
-U 1 1 5B5D9C9C
-P 1950 2650
-F 0 "J1" H 2028 2975 50  0000 C CNN
-F 1 "12V_EXT" H 2028 2884 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2000 2610 50  0001 C CNN
-F 3 "~" H 2000 2610 50  0001 C CNN
-	1    1950 2650
-	1    0    0    -1  
-$EndComp
 Text GLabel 1600 3600 0    50   Input ~ 0
 PCIe_12V
 $Comp
@@ -2981,4 +2970,15 @@ Wire Wire Line
 	7550 9700 8550 9700
 Wire Wire Line
 	7550 9800 7550 10000
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 5DA5AC57
+P 1950 2650
+F 0 "J1" H 2007 2967 50  0000 C CNN
+F 1 "12V_EXT" H 2007 2876 50  0000 C CNN
+F 2 "" H 2000 2610 50  0001 C CNN
+F 3 "~" H 2000 2610 50  0001 C CNN
+	1    1950 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
