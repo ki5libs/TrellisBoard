@@ -47,29 +47,10 @@ Wire Wire Line
 Wire Wire Line
 	11450 5000 11450 4850
 Connection ~ 11400 5000
-$Comp
-L eco_connectors:JK0654219 P4
-U 1 1 5CA2589B
-P 5300 1700
-F 0 "P4" H 5194 2765 50  0000 C CNN
-F 1 "JK0654219NL" H 5194 2674 50  0000 C CNN
-F 2 "Custom Parts:Pulse_MagJack_JK0654219NL" H 6450 1400 50  0001 C CNN
-F 3 "" H 6450 1400 50  0001 C CNN
-	1    5300 1700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 1400 7250 1400
-Wire Wire Line
-	6100 1600 7250 1600
 Text Label 7250 1400 2    50   ~ 0
 MX1+
 Text Label 7250 1600 2    50   ~ 0
 MX1-
-Wire Wire Line
-	6100 1800 7250 1800
-Wire Wire Line
-	6100 2000 7250 2000
 Text Label 7250 1800 2    50   ~ 0
 MX2+
 Text Label 7250 2000 2    50   ~ 0
@@ -118,18 +99,10 @@ F 3 "~" H 6650 3100 50  0001 C CNN
 	1    6650 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 2200 7250 2200
-Wire Wire Line
-	6100 2400 7250 2400
 Text Label 7250 2200 2    50   ~ 0
 MX3+
 Text Label 7250 2400 2    50   ~ 0
 MX3-
-Wire Wire Line
-	6100 2600 7250 2600
-Wire Wire Line
-	6100 2800 7250 2800
 Text Label 7250 2600 2    50   ~ 0
 MX4+
 Text Label 7250 2800 2    50   ~ 0
@@ -137,17 +110,9 @@ MX4-
 Wire Wire Line
 	6200 3000 6200 1500
 Wire Wire Line
-	6200 1500 6100 1500
-Wire Wire Line
-	6100 1900 6350 1900
-Wire Wire Line
 	6350 1900 6350 3000
 Wire Wire Line
 	6500 3000 6500 2300
-Wire Wire Line
-	6500 2300 6100 2300
-Wire Wire Line
-	6100 2700 6650 2700
 Wire Wire Line
 	6650 2700 6650 3000
 Wire Wire Line
@@ -180,10 +145,6 @@ $EndComp
 Wire Wire Line
 	6200 3400 6200 3300
 Connection ~ 6200 3300
-Wire Wire Line
-	6200 3300 5300 3300
-Wire Wire Line
-	5300 3300 5300 3200
 Text Label 9800 3150 0    50   ~ 0
 MX4+
 Wire Wire Line
@@ -1385,62 +1346,6 @@ F 3 "" H 15650 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15650 3850 15300 3850
-Text Label 7100 900  2    50   ~ 0
-ETH_LED1
-$Comp
-L Device:R_Small R63
-U 1 1 5CF7CC99
-P 6300 900
-F 0 "R63" V 6200 900 50  0000 C CNN
-F 1 "1k" V 6300 900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6300 900 50  0001 C CNN
-F 3 "~" H 6300 900 50  0001 C CNN
-	1    6300 900 
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R64
-U 1 1 5CF8D044
-P 6300 1100
-F 0 "R64" V 6200 1100 50  0000 C CNN
-F 1 "1k" V 6300 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6300 1100 50  0001 C CNN
-F 3 "~" H 6300 1100 50  0001 C CNN
-	1    6300 1100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6200 900  6100 900 
-Wire Wire Line
-	6100 1100 6200 1100
-Wire Wire Line
-	6400 900  7100 900 
-Text Label 7100 1100 2    50   ~ 0
-ETH_LED2
-Wire Wire Line
-	7100 1100 6400 1100
-$Comp
-L power:GND #PWR0123
-U 1 1 5CFD0222
-P 6200 1300
-F 0 "#PWR0123" H 6200 1050 50  0001 C CNN
-F 1 "GND" V 6205 1172 50  0000 R CNN
-F 2 "" H 6200 1300 50  0001 C CNN
-F 3 "" H 6200 1300 50  0001 C CNN
-	1    6200 1300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6200 1300 6150 1300
-Wire Wire Line
-	6150 1300 6150 1200
-Wire Wire Line
-	6150 1000 6100 1000
-Wire Wire Line
-	6100 1200 6150 1200
-Connection ~ 6150 1200
-Wire Wire Line
-	6150 1200 6150 1000
 $Comp
 L Connector:USB_A J4
 U 1 1 5D00A41C
@@ -3692,4 +3597,93 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1550 1550 50  
 	1    1550 1550
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector:JK0654219 P4
+U 1 1 5DC3A4F4
+P 4800 2100
+F 0 "P4" H 5345 3250 50  0000 C CNN
+F 1 "JK0654219" H 4410 3255 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Pulse_JK0654219NL_Horizontal" H 4795 805 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Pulse%20PDFs/JK%20Series.pdf" H 4795 805 50  0001 C CNN
+	1    4800 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3000 5600 3000
+$Comp
+L Device:R_Small R64
+U 1 1 5CF8D044
+P 5700 3000
+F 0 "R64" V 5600 3000 50  0000 C CNN
+F 1 "1k" V 5700 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5700 3000 50  0001 C CNN
+F 3 "~" H 5700 3000 50  0001 C CNN
+	1    5700 3000
+	0    1    1    0   
+$EndComp
+Text Label 6150 3000 2    50   ~ 0
+ETH_LED2
+Wire Wire Line
+	6150 3000 5800 3000
+Wire Wire Line
+	6200 3300 5500 3300
+Wire Wire Line
+	5500 3100 5500 3300
+Connection ~ 5500 3300
+Wire Wire Line
+	5500 3300 4800 3300
+Wire Wire Line
+	5600 1100 5500 1100
+$Comp
+L Device:R_Small R63
+U 1 1 5CF7CC99
+P 5700 1100
+F 0 "R63" V 5600 1100 50  0000 C CNN
+F 1 "1k" V 5700 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5700 1100 50  0001 C CNN
+F 3 "~" H 5700 1100 50  0001 C CNN
+	1    5700 1100
+	0    1    1    0   
+$EndComp
+Text Label 6150 1100 2    50   ~ 0
+ETH_LED1
+$Comp
+L power:GND #PWR0123
+U 1 1 5CFD0222
+P 5750 1200
+F 0 "#PWR0123" H 5750 950 50  0001 C CNN
+F 1 "GND" H 5850 1050 50  0000 R CNN
+F 2 "" H 5750 1200 50  0001 C CNN
+F 3 "" H 5750 1200 50  0001 C CNN
+	1    5750 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1200 5750 1200
+Wire Wire Line
+	5800 1100 6150 1100
+Wire Wire Line
+	5500 1400 7250 1400
+Wire Wire Line
+	5500 1500 6200 1500
+Wire Wire Line
+	5500 1600 7250 1600
+Wire Wire Line
+	5500 1800 7250 1800
+Wire Wire Line
+	5500 1900 6350 1900
+Wire Wire Line
+	5500 2000 7250 2000
+Wire Wire Line
+	5500 2200 7250 2200
+Wire Wire Line
+	5500 2300 6500 2300
+Wire Wire Line
+	5500 2400 7250 2400
+Wire Wire Line
+	5500 2600 7250 2600
+Wire Wire Line
+	5500 2700 6650 2700
+Wire Wire Line
+	5500 2800 7250 2800
 $EndSCHEMATC
