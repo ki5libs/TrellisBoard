@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ecp5_mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -3011,156 +3010,37 @@ Wire Wire Line
 	2350 7950 2900 7950
 Text Label 1950 5900 1    50   ~ 0
 HDMI_5V
-$Comp
-L eco_interface:TPD4E02B04 DA5
-U 1 1 6003247F
-P 4800 4450
-F 0 "DA5" H 4800 5237 60  0000 C CNN
-F 1 "TPD4E02B04" H 4800 5131 60  0000 C CNN
-F 2 "Custom Parts:USON10" H 4800 4450 60  0001 C CNN
-F 3 "" H 4800 4450 60  0001 C CNN
-	1    4800 4450
-	1    0    0    -1  
-$EndComp
-Text Label 3800 4000 0    50   ~ 0
+Text Label 4000 4200 0    50   ~ 0
 TMDS_D2+
-Wire Wire Line
-	3800 4000 4250 4000
-Wire Wire Line
-	4350 4100 4250 4100
-Wire Wire Line
-	4250 4100 4250 4000
-Connection ~ 4250 4000
-Wire Wire Line
-	4250 4000 4350 4000
-Text Label 3800 4300 0    50   ~ 0
+Text Label 4000 4300 0    50   ~ 0
 TMDS_D2-
-Wire Wire Line
-	3800 4300 4250 4300
-Wire Wire Line
-	4350 4400 4250 4400
-Wire Wire Line
-	4250 4400 4250 4300
-Connection ~ 4250 4300
-Wire Wire Line
-	4250 4300 4350 4300
-Text Label 3800 4600 0    50   ~ 0
+Text Label 4000 4500 0    50   ~ 0
 TMDS_D1+
-Wire Wire Line
-	3800 4600 4250 4600
-Wire Wire Line
-	4350 4700 4250 4700
-Wire Wire Line
-	4250 4700 4250 4600
-Connection ~ 4250 4600
-Wire Wire Line
-	4250 4600 4350 4600
-Text Label 3800 4900 0    50   ~ 0
+Text Label 4000 4600 0    50   ~ 0
 TMDS_D1-
 Wire Wire Line
-	3800 4900 4250 4900
-Wire Wire Line
-	4350 5000 4250 5000
-Wire Wire Line
-	4250 5000 4250 4900
-Connection ~ 4250 4900
-Wire Wire Line
-	4250 4900 4350 4900
-$Comp
-L power:GND #PWR0121
-U 1 1 6028ED65
-P 5400 5100
-F 0 "#PWR0121" H 5400 4850 50  0001 C CNN
-F 1 "GND" H 5405 4927 50  0000 C CNN
-F 2 "" H 5400 5100 50  0001 C CNN
-F 3 "" H 5400 5100 50  0001 C CNN
-	1    5400 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 5100 5400 5000
-Wire Wire Line
-	5400 4900 5250 4900
-Wire Wire Line
-	5250 5000 5400 5000
-Connection ~ 5400 5000
-Wire Wire Line
-	5400 5000 5400 4900
-$Comp
-L eco_interface:TPD4E02B04 DA6
-U 1 1 60363A81
-P 6500 4450
-F 0 "DA6" H 6500 5237 60  0000 C CNN
-F 1 "TPD4E02B04" H 6500 5131 60  0000 C CNN
-F 2 "Custom Parts:USON10" H 6500 4450 60  0001 C CNN
-F 3 "" H 6500 4450 60  0001 C CNN
-	1    6500 4450
-	1    0    0    -1  
-$EndComp
-Text Label 5500 4000 0    50   ~ 0
+	5200 4400 5050 4400
+Text Label 5700 4200 0    50   ~ 0
 TMDS_D0+
-Wire Wire Line
-	5500 4000 5950 4000
-Wire Wire Line
-	6050 4100 5950 4100
-Wire Wire Line
-	5950 4100 5950 4000
-Connection ~ 5950 4000
-Wire Wire Line
-	5950 4000 6050 4000
-Text Label 5500 4300 0    50   ~ 0
+Text Label 5700 4300 0    50   ~ 0
 TMDS_D0-
-Wire Wire Line
-	5500 4300 5950 4300
-Wire Wire Line
-	6050 4400 5950 4400
-Wire Wire Line
-	5950 4400 5950 4300
-Connection ~ 5950 4300
-Wire Wire Line
-	5950 4300 6050 4300
-Text Label 5500 4600 0    50   ~ 0
+Text Label 5700 4500 0    50   ~ 0
 TMDS_CLK+
-Wire Wire Line
-	5500 4600 5950 4600
-Wire Wire Line
-	6050 4700 5950 4700
-Wire Wire Line
-	5950 4700 5950 4600
-Connection ~ 5950 4600
-Wire Wire Line
-	5950 4600 6050 4600
-Text Label 5500 4900 0    50   ~ 0
+Text Label 5700 4600 0    50   ~ 0
 TMDS_CLK-
-Wire Wire Line
-	5500 4900 5950 4900
-Wire Wire Line
-	6050 5000 5950 5000
-Wire Wire Line
-	5950 5000 5950 4900
-Connection ~ 5950 4900
-Wire Wire Line
-	5950 4900 6050 4900
 $Comp
 L power:GND #PWR0125
 U 1 1 60363A9F
-P 7100 5100
-F 0 "#PWR0125" H 7100 4850 50  0001 C CNN
-F 1 "GND" H 7105 4927 50  0000 C CNN
-F 2 "" H 7100 5100 50  0001 C CNN
-F 3 "" H 7100 5100 50  0001 C CNN
-	1    7100 5100
+P 6900 4600
+F 0 "#PWR0125" H 6900 4350 50  0001 C CNN
+F 1 "GND" H 6905 4427 50  0000 C CNN
+F 2 "" H 6900 4600 50  0001 C CNN
+F 3 "" H 6900 4600 50  0001 C CNN
+	1    6900 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 5100 7100 5000
-Wire Wire Line
-	7100 4900 6950 4900
-Wire Wire Line
-	6950 5000 7100 5000
-Connection ~ 7100 5000
-Wire Wire Line
-	7100 5000 7100 4900
+	6900 4400 6750 4400
 $Comp
 L Interface:PCA9306 U18
 U 1 1 603D9102
@@ -3686,4 +3566,57 @@ Wire Wire Line
 	5500 2700 6650 2700
 Wire Wire Line
 	5500 2800 7250 2800
+$Comp
+L Power_Protection:TPD4E02B04DQA DA5
+U 1 1 62F90330
+P 4850 4400
+F 0 "DA5" V 4433 4450 50  0000 C CNN
+F 1 "TPD4E02B04DQA" V 4524 4450 50  0000 C CNN
+F 2 "Package_SON:USON-10_2.5x1.0mm_P0.5mm" H 5150 4400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" H 4975 4725 50  0001 C CNN
+	1    4850 4400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4000 4200 4550 4200
+Wire Wire Line
+	4000 4300 4550 4300
+Wire Wire Line
+	4000 4500 4550 4500
+Wire Wire Line
+	4000 4600 4550 4600
+$Comp
+L power:GND #PWR0121
+U 1 1 6028ED65
+P 5200 4600
+F 0 "#PWR0121" H 5200 4350 50  0001 C CNN
+F 1 "GND" H 5205 4427 50  0000 C CNN
+F 2 "" H 5200 4600 50  0001 C CNN
+F 3 "" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4400 5200 4600
+$Comp
+L Power_Protection:TPD4E02B04DQA DA6
+U 1 1 637690F2
+P 6550 4400
+F 0 "DA6" V 6133 4450 50  0000 C CNN
+F 1 "TPD4E02B04DQA" V 6224 4450 50  0000 C CNN
+F 2 "Package_SON:USON-10_2.5x1.0mm_P0.5mm" H 6850 4400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" H 6675 4725 50  0001 C CNN
+	1    6550 4400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5700 4300 6250 4300
+Wire Wire Line
+	5700 4200 6250 4200
+Wire Wire Line
+	5700 4500 6250 4500
+Wire Wire Line
+	5700 4600 6250 4600
+Wire Wire Line
+	6900 4400 6900 4600
 $EndSCHEMATC

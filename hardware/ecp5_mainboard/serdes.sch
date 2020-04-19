@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ecp5_mainboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -909,156 +908,48 @@ Wire Wire Line
 Wire Wire Line
 	3400 1550 3400 2450
 Connection ~ 3400 2450
-$Comp
-L eco_interface:TPD4E02B04 DA3
-U 1 1 5C3B60B7
-P 6800 2300
-F 0 "DA3" H 6800 3087 60  0000 C CNN
-F 1 "TPD4E02B04" H 6800 2981 60  0000 C CNN
-F 2 "Custom Parts:USON10" H 6800 2300 60  0001 C CNN
-F 3 "" H 6800 2300 60  0001 C CNN
-	1    6800 2300
-	1    0    0    -1  
-$EndComp
-Text Label 5800 1850 0    50   ~ 0
+Text Label 6000 2050 0    50   ~ 0
 PCIe_HSI0+
-Text Label 5800 2150 0    50   ~ 0
+Text Label 6000 2150 0    50   ~ 0
 PCIe_HSI0-
-Text Label 5800 2450 0    50   ~ 0
+Text Label 6000 2350 0    50   ~ 0
 PCIe_HSI1+
-Text Label 5800 2750 0    50   ~ 0
+Text Label 6000 2450 0    50   ~ 0
 PCIe_HSI1-
-Wire Wire Line
-	5800 1850 6250 1850
-Wire Wire Line
-	5800 2150 6250 2150
-Wire Wire Line
-	5800 2450 6250 2450
-Wire Wire Line
-	5800 2750 6250 2750
-Wire Wire Line
-	6350 1950 6250 1950
-Wire Wire Line
-	6250 1950 6250 1850
-Connection ~ 6250 1850
-Wire Wire Line
-	6250 1850 6350 1850
-Wire Wire Line
-	6350 2250 6250 2250
-Wire Wire Line
-	6250 2250 6250 2150
-Connection ~ 6250 2150
-Wire Wire Line
-	6250 2150 6350 2150
-Wire Wire Line
-	6350 2550 6250 2550
-Wire Wire Line
-	6250 2550 6250 2450
-Connection ~ 6250 2450
-Wire Wire Line
-	6250 2450 6350 2450
-Wire Wire Line
-	6350 2850 6250 2850
-Wire Wire Line
-	6250 2850 6250 2750
-Connection ~ 6250 2750
-Wire Wire Line
-	6250 2750 6350 2750
 $Comp
 L power:GND #PWR092
 U 1 1 5C440B80
-P 7400 2950
-F 0 "#PWR092" H 7400 2700 50  0001 C CNN
-F 1 "GND" H 7405 2777 50  0000 C CNN
-F 2 "" H 7400 2950 50  0001 C CNN
-F 3 "" H 7400 2950 50  0001 C CNN
-	1    7400 2950
+P 7200 2450
+F 0 "#PWR092" H 7200 2200 50  0001 C CNN
+F 1 "GND" H 7205 2277 50  0000 C CNN
+F 2 "" H 7200 2450 50  0001 C CNN
+F 3 "" H 7200 2450 50  0001 C CNN
+	1    7200 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 2950 7400 2850
-Wire Wire Line
-	7400 2750 7250 2750
-Wire Wire Line
-	7250 2850 7400 2850
-Connection ~ 7400 2850
-Wire Wire Line
-	7400 2850 7400 2750
-$Comp
-L eco_interface:TPD4E02B04 DA4
-U 1 1 5C465B20
-P 6800 3900
-F 0 "DA4" H 6800 4687 60  0000 C CNN
-F 1 "TPD4E02B04" H 6800 4581 60  0000 C CNN
-F 2 "Custom Parts:USON10" H 6800 3900 60  0001 C CNN
-F 3 "" H 6800 3900 60  0001 C CNN
-	1    6800 3900
-	1    0    0    -1  
-$EndComp
-Text Label 5800 3450 0    50   ~ 0
+	7200 2250 7050 2250
+Text Label 6000 3650 0    50   ~ 0
 DCU0_RX0+
-Text Label 5800 3750 0    50   ~ 0
+Text Label 6000 3750 0    50   ~ 0
 DCU0_RX0-
-Text Label 5800 4050 0    50   ~ 0
+Text Label 6000 3950 0    50   ~ 0
 DCU0_RX1+
-Text Label 5800 4350 0    50   ~ 0
+Text Label 6000 4050 0    50   ~ 0
 DCU0_RX1-
-Wire Wire Line
-	5800 3450 6250 3450
-Wire Wire Line
-	5800 3750 6250 3750
-Wire Wire Line
-	5800 4050 6250 4050
-Wire Wire Line
-	5800 4350 6250 4350
-Wire Wire Line
-	6350 3550 6250 3550
-Wire Wire Line
-	6250 3550 6250 3450
-Connection ~ 6250 3450
-Wire Wire Line
-	6250 3450 6350 3450
-Wire Wire Line
-	6350 3850 6250 3850
-Wire Wire Line
-	6250 3850 6250 3750
-Connection ~ 6250 3750
-Wire Wire Line
-	6250 3750 6350 3750
-Wire Wire Line
-	6350 4150 6250 4150
-Wire Wire Line
-	6250 4150 6250 4050
-Connection ~ 6250 4050
-Wire Wire Line
-	6250 4050 6350 4050
-Wire Wire Line
-	6350 4450 6250 4450
-Wire Wire Line
-	6250 4450 6250 4350
-Connection ~ 6250 4350
-Wire Wire Line
-	6250 4350 6350 4350
 $Comp
 L power:GND #PWR093
 U 1 1 5C465B3E
-P 7400 4550
-F 0 "#PWR093" H 7400 4300 50  0001 C CNN
-F 1 "GND" H 7405 4377 50  0000 C CNN
-F 2 "" H 7400 4550 50  0001 C CNN
-F 3 "" H 7400 4550 50  0001 C CNN
-	1    7400 4550
+P 7200 4050
+F 0 "#PWR093" H 7200 3800 50  0001 C CNN
+F 1 "GND" H 7205 3877 50  0000 C CNN
+F 2 "" H 7200 4050 50  0001 C CNN
+F 3 "" H 7200 4050 50  0001 C CNN
+	1    7200 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 4550 7400 4450
-Wire Wire Line
-	7400 4350 7250 4350
-Wire Wire Line
-	7250 4450 7400 4450
-Connection ~ 7400 4450
-Wire Wire Line
-	7400 4450 7400 4350
+	7200 3850 7050 3850
 $Comp
 L Device:C_Small C99
 U 1 1 5C501992
@@ -1147,156 +1038,48 @@ Text Label 6450 9300 0    50   ~ 0
 DCU1_RX1+
 Wire Wire Line
 	7100 9300 6450 9300
-$Comp
-L eco_interface:TPD4E02B04 DA1
-U 1 1 5C5E2F8A
-P 3450 7100
-F 0 "DA1" H 3450 7887 60  0000 C CNN
-F 1 "TPD4E02B04" H 3450 7781 60  0000 C CNN
-F 2 "Custom Parts:USON10" H 3450 7100 60  0001 C CNN
-F 3 "" H 3450 7100 60  0001 C CNN
-	1    3450 7100
-	1    0    0    -1  
-$EndComp
-Text Label 2450 6650 0    50   ~ 0
+Text Label 2650 6850 0    50   ~ 0
 M2_RX0+
-Text Label 2450 6950 0    50   ~ 0
+Text Label 2650 6950 0    50   ~ 0
 M2_RX0-
-Text Label 2450 7250 0    50   ~ 0
+Text Label 2650 7150 0    50   ~ 0
 DCU1_RX0-
-Text Label 2450 7550 0    50   ~ 0
+Text Label 2650 7250 0    50   ~ 0
 DCU1_RX0+
-Wire Wire Line
-	2450 6650 2900 6650
-Wire Wire Line
-	2450 6950 2900 6950
-Wire Wire Line
-	2450 7250 2900 7250
-Wire Wire Line
-	2450 7550 2900 7550
-Wire Wire Line
-	3000 6750 2900 6750
-Wire Wire Line
-	2900 6750 2900 6650
-Connection ~ 2900 6650
-Wire Wire Line
-	2900 6650 3000 6650
-Wire Wire Line
-	3000 7050 2900 7050
-Wire Wire Line
-	2900 7050 2900 6950
-Connection ~ 2900 6950
-Wire Wire Line
-	2900 6950 3000 6950
-Wire Wire Line
-	3000 7350 2900 7350
-Wire Wire Line
-	2900 7350 2900 7250
-Connection ~ 2900 7250
-Wire Wire Line
-	2900 7250 3000 7250
-Wire Wire Line
-	3000 7650 2900 7650
-Wire Wire Line
-	2900 7650 2900 7550
-Connection ~ 2900 7550
-Wire Wire Line
-	2900 7550 3000 7550
 $Comp
 L power:GND #PWR090
 U 1 1 5C5E2FA8
-P 4050 7750
-F 0 "#PWR090" H 4050 7500 50  0001 C CNN
-F 1 "GND" H 4055 7577 50  0000 C CNN
-F 2 "" H 4050 7750 50  0001 C CNN
-F 3 "" H 4050 7750 50  0001 C CNN
-	1    4050 7750
+P 3850 7250
+F 0 "#PWR090" H 3850 7000 50  0001 C CNN
+F 1 "GND" H 3855 7077 50  0000 C CNN
+F 2 "" H 3850 7250 50  0001 C CNN
+F 3 "" H 3850 7250 50  0001 C CNN
+	1    3850 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 7750 4050 7650
-Wire Wire Line
-	4050 7550 3900 7550
-Wire Wire Line
-	3900 7650 4050 7650
-Connection ~ 4050 7650
-Wire Wire Line
-	4050 7650 4050 7550
-$Comp
-L eco_interface:TPD4E02B04 DA2
-U 1 1 5C642E0C
-P 3450 8700
-F 0 "DA2" H 3450 9487 60  0000 C CNN
-F 1 "TPD4E02B04" H 3450 9381 60  0000 C CNN
-F 2 "Custom Parts:USON10" H 3450 8700 60  0001 C CNN
-F 3 "" H 3450 8700 60  0001 C CNN
-	1    3450 8700
-	1    0    0    -1  
-$EndComp
-Text Label 2450 8250 0    50   ~ 0
+	3850 7050 3700 7050
+Text Label 2650 8450 0    50   ~ 0
 M2_RX1+
-Text Label 2450 8550 0    50   ~ 0
+Text Label 2650 8550 0    50   ~ 0
 M2_RX1-
-Text Label 2450 8850 0    50   ~ 0
+Text Label 2650 8750 0    50   ~ 0
 DCU1_RX1-
-Text Label 2450 9150 0    50   ~ 0
+Text Label 2650 8850 0    50   ~ 0
 DCU1_RX1+
-Wire Wire Line
-	2450 8250 2900 8250
-Wire Wire Line
-	2450 8550 2900 8550
-Wire Wire Line
-	2450 8850 2900 8850
-Wire Wire Line
-	2450 9150 2900 9150
-Wire Wire Line
-	3000 8350 2900 8350
-Wire Wire Line
-	2900 8350 2900 8250
-Connection ~ 2900 8250
-Wire Wire Line
-	2900 8250 3000 8250
-Wire Wire Line
-	3000 8650 2900 8650
-Wire Wire Line
-	2900 8650 2900 8550
-Connection ~ 2900 8550
-Wire Wire Line
-	2900 8550 3000 8550
-Wire Wire Line
-	3000 8950 2900 8950
-Wire Wire Line
-	2900 8950 2900 8850
-Connection ~ 2900 8850
-Wire Wire Line
-	2900 8850 3000 8850
-Wire Wire Line
-	3000 9250 2900 9250
-Wire Wire Line
-	2900 9250 2900 9150
-Connection ~ 2900 9150
-Wire Wire Line
-	2900 9150 3000 9150
 $Comp
 L power:GND #PWR091
 U 1 1 5C642E2A
-P 4050 9350
-F 0 "#PWR091" H 4050 9100 50  0001 C CNN
-F 1 "GND" H 4055 9177 50  0000 C CNN
-F 2 "" H 4050 9350 50  0001 C CNN
-F 3 "" H 4050 9350 50  0001 C CNN
-	1    4050 9350
+P 3850 8850
+F 0 "#PWR091" H 3850 8600 50  0001 C CNN
+F 1 "GND" H 3855 8677 50  0000 C CNN
+F 2 "" H 3850 8850 50  0001 C CNN
+F 3 "" H 3850 8850 50  0001 C CNN
+	1    3850 8850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 9350 4050 9250
-Wire Wire Line
-	4050 9150 3900 9150
-Wire Wire Line
-	3900 9250 4050 9250
-Connection ~ 4050 9250
-Wire Wire Line
-	4050 9250 4050 9150
+	3850 8650 3700 8650
 Wire Wire Line
 	13000 1600 12250 1600
 Text Label 12250 1600 0    50   ~ 0
@@ -2021,4 +1804,88 @@ Wire Wire Line
 	9100 2850 9100 2950
 Wire Wire Line
 	9100 2950 8750 2950
+$Comp
+L Power_Protection:TPD4E02B04DQA DA1
+U 1 1 627E2AFC
+P 3500 7050
+F 0 "DA1" V 3083 7100 50  0000 C CNN
+F 1 "TPD4E02B04DQA" V 3174 7100 50  0000 C CNN
+F 2 "Package_SON:USON-10_2.5x1.0mm_P0.5mm" H 3800 7050 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" H 3625 7375 50  0001 C CNN
+	1    3500 7050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2650 6850 3200 6850
+Wire Wire Line
+	2650 6950 3200 6950
+Wire Wire Line
+	2650 7150 3200 7150
+Wire Wire Line
+	2650 7250 3200 7250
+Wire Wire Line
+	3850 7050 3850 7250
+$Comp
+L Power_Protection:TPD4E02B04DQA DA2
+U 1 1 62A377E8
+P 3500 8650
+F 0 "DA2" V 3083 8700 50  0000 C CNN
+F 1 "TPD4E02B04DQA" V 3174 8700 50  0000 C CNN
+F 2 "Package_SON:USON-10_2.5x1.0mm_P0.5mm" H 3800 8650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" H 3625 8975 50  0001 C CNN
+	1    3500 8650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2650 8550 3200 8550
+Wire Wire Line
+	2650 8450 3200 8450
+Wire Wire Line
+	2650 8750 3200 8750
+Wire Wire Line
+	2650 8850 3200 8850
+Wire Wire Line
+	3850 8650 3850 8850
+$Comp
+L Power_Protection:TPD4E02B04DQA DA3
+U 1 1 62BF6D06
+P 6850 2250
+F 0 "DA3" V 6433 2300 50  0000 C CNN
+F 1 "TPD4E02B04DQA" V 6524 2300 50  0000 C CNN
+F 2 "Package_SON:USON-10_2.5x1.0mm_P0.5mm" H 7150 2250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" H 6975 2575 50  0001 C CNN
+	1    6850 2250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6000 2150 6550 2150
+Wire Wire Line
+	6000 2350 6550 2350
+Wire Wire Line
+	6000 2450 6550 2450
+Wire Wire Line
+	6000 2050 6550 2050
+Wire Wire Line
+	7200 2250 7200 2450
+$Comp
+L Power_Protection:TPD4E02B04DQA DA4
+U 1 1 62DA2FF2
+P 6850 3850
+F 0 "DA4" V 6433 3900 50  0000 C CNN
+F 1 "TPD4E02B04DQA" V 6524 3900 50  0000 C CNN
+F 2 "Package_SON:USON-10_2.5x1.0mm_P0.5mm" H 7150 3850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" H 6975 4175 50  0001 C CNN
+	1    6850 3850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7200 3850 7200 4050
+Wire Wire Line
+	6000 3950 6550 3950
+Wire Wire Line
+	6000 3750 6550 3750
+Wire Wire Line
+	6000 3650 6550 3650
+Wire Wire Line
+	6000 4050 6550 4050
 $EndSCHEMATC
