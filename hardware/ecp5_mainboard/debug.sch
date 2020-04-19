@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ecp5_mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Interface_USB:FT2232H U13
-U 1 1 627DD271
-P 8200 3950
-F 0 "U13" H 8200 4000 50  0000 C CNN
-F 1 "FT2232H" H 8200 3900 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 8200 3950 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Products/ICs/FT2232H.html" H 8200 3950 50  0001 C CNN
-	1    8200 3950
-	1    0    0    -1  
-$EndComp
 Text Label 6550 5150 0    50   ~ 0
 FTDI_12MHz
 Wire Wire Line
@@ -1185,4 +1173,15 @@ Wire Wire Line
 	4850 5350 4700 5350
 Text Label 4700 5350 0    50   ~ 0
 CS
+$Comp
+L Interface_USB:FT2232HL U13
+U 1 1 5E9C83B5
+P 8200 3950
+F 0 "U13" H 8200 4000 50  0000 C CNN
+F 1 "FT2232HL" H 8200 3900 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 8200 3950 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf" H 8200 3950 50  0001 C CNN
+	1    8200 3950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
