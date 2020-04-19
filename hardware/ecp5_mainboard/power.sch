@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ecp5_mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -2623,19 +2622,6 @@ Wire Wire Line
 	3050 2550 3050 2400
 Wire Wire Line
 	2850 2550 3050 2550
-$Comp
-L Device:D_Schottky_AAK D3
-U 1 1 5C219D75
-P 3200 2750
-AR Path="/5C219D75" Ref="D3"  Part="1" 
-AR Path="/5B5D9B41/5C219D75" Ref="D3"  Part="1" 
-F 0 "D3" V 3179 2890 50  0000 L CNN
-F 1 "MBR15U60" V 3270 2890 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-277B" H 3200 2750 50  0001 C CNN
-F 3 "~" H 3200 2750 50  0001 C CNN
-	1    3200 2750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3200 2950 3200 3350
 Wire Wire Line
@@ -2980,5 +2966,16 @@ F 2 "" H 2000 2610 50  0001 C CNN
 F 3 "~" H 2000 2610 50  0001 C CNN
 	1    1950 2650
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_AAK D3
+U 1 1 5E9C64D0
+P 3200 2750
+F 0 "D3" V 3179 2894 50  0000 L CNN
+F 1 "MBR15U60" V 3270 2894 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-277B" H 3200 2750 50  0001 C CNN
+F 3 "~" H 3200 2750 50  0001 C CNN
+	1    3200 2750
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
